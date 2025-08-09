@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>4D Tic Tac Toe (3×3×3×3)</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>4D Tic Tac Toe — 3×3×3×3</h1>
+    <div id="status" class="status x" aria-live="polite">X’s turn</div>
+
+    <!-- w-rows (top→bottom) each containing z-boards (left→right) -->
+    <section id="space" class="space" aria-label="4D board"></section>
+
+    <div class="legend">
+      <div><strong>Layout:</strong> rows = w (0..2), columns = z (0..2); each small board is 3×3 over (x,y).</div>
+      <button id="reset" class="reset">Restart</button>
+    </div>
+  </main>
+
+  <script type="module" src="./game.js"></script>
+</body>
+</html>
